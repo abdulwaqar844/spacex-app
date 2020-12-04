@@ -15,6 +15,7 @@ const LaunchProfile: React.FC<Props> = ({ data }) => {
 
   return (
     <div className={className}>
+      
       <div className={`${className}__status`}>
         <span>Flight {data.launch.flight_number}: </span>
         {data.launch.launch_success ? (
@@ -26,13 +27,17 @@ const LaunchProfile: React.FC<Props> = ({ data }) => {
       <h1 className={`${className}__title`}>
         {data.launch.mission_name}
         {data.launch.rocket &&
-          ` (${data.launch.rocket.rocket_name} | ${data.launch.rocket.rocket_type})`}
+          ` (${data.launch.rocket.rocket_name} | ${data.launch.rocket.rocket_type})`
+          }
+            
+
+          
       </h1>
       <p className={`${className}__description`}>{data.launch.details}</p>
       {!!data.launch.links && !!data.launch.links.flickr_images && (
         <div className={`${className}__image-list`}>
           {data.launch.links.flickr_images.map(image =>
-            image ? <img src={image} className={`${className}__image`} key={image} /> : null,
+            image ? <img src={image} className={`${className}__image`} key={image} alt={"img"} /> : null,
           )}
         </div>
       )}
