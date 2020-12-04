@@ -9,7 +9,6 @@ const App = () => {
   const handleIdChange = React.useCallback(newId => {
     setId(newId);
   }, []);
-
   return (
     <div className="App">
       <LaunchList handleIdChange={handleIdChange} />
