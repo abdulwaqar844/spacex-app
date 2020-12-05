@@ -17,13 +17,16 @@ const LaunchList: React.FC<Props> = ({ data, handleIdChange }) => (
 
       data.launches?.map(
         (launch, i) =>{
-            return(
-              <li
+            return(<div>
+                 <li
               key={i}
               
               onClick={() => handleIdChange(launch?.flight_number!)}              >
               {launch?.mission_name} ({launch?.launch_year})
             </li>
+            <hr/>
+            </div>
+           
             )
            
           }

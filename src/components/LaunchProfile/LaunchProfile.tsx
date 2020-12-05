@@ -24,7 +24,7 @@ const LaunchProfile: React.FC<Props> = ({ data }) => {
           <span className={`${className}__failed`}>Failed</span>
         )}
       </div>
-      <h1 className={`${className}__title`}>
+      <h2 className={`${className}__title`}>
         {data.launch.mission_name}
         {data.launch.rocket &&
           ` (${data.launch.rocket.rocket_name} | ${data.launch.rocket.rocket_type})`
@@ -32,7 +32,7 @@ const LaunchProfile: React.FC<Props> = ({ data }) => {
             
 
           
-      </h1>
+      </h2>
       <p className={`${className}__description`}>{data.launch.details}</p>
       {!!data.launch.links && !!data.launch.links.flickr_images && (
         <div className={`${className}__image-list`}>

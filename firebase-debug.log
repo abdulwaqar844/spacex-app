@@ -1,0 +1,13 @@
+[debug] [2020-12-05T17:35:12.325Z] ----------------------------------------------------------------------
+[debug] [2020-12-05T17:35:12.330Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Waqar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-12-05T17:35:12.331Z] CLI Version:   8.17.0
+[debug] [2020-12-05T17:35:12.331Z] Platform:      win32
+[debug] [2020-12-05T17:35:12.332Z] Node Version:  v14.14.0
+[debug] [2020-12-05T17:35:12.465Z] Time:          Sat Dec 05 2020 22:35:12 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-12-05T17:35:12.466Z] ----------------------------------------------------------------------
+[debug] [2020-12-05T17:35:12.466Z] 
+[debug] [2020-12-05T17:35:12.566Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-05T17:35:12.569Z] > authorizing via signed-in user
+[debug] [2020-12-05T17:35:12.570Z] [iam] checking project spacex-waqar for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-12-05T17:35:12.607Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/spacex-waqar:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
